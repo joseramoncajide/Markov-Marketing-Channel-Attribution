@@ -6,7 +6,7 @@ if(!exists("package", mode="function")) source("util.R")
 
 list.of.packages <- c('ggplot2', 'ChannelAttribution', 'reshape2', 'ggthemes', 'markovchain', 'htmlTable', 'plotly', 'RColorBrewer')
 
-package(list.of.packages, update=FALSE, verbose=TRUE, install=FALSE, quiet=FALSE)
+package(list.of.packages, update=FALSE, verbose=TRUE, install=TRUE, quiet=FALSE)
 
 lapply(list.of.packages, library, character.only = TRUE)
 
